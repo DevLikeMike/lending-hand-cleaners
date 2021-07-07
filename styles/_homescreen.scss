@@ -9,11 +9,20 @@
   }
   p {
     margin: 1rem 0;
+    line-height: 1.6;
+
+    @media (min-width: 768px) {
+      line-height: 1.5;
+    }
   }
 
   .section-hr {
     height: 3px;
-    background-color: #4a4a4a;
-    margin: 2rem 0;
+    background-color: hsl(0, 0%, 29%);
+    margin: 2rem 0 1rem;
   }
+}
+
+.home.additional {
+  padding: 1rem;
 }

@@ -19,15 +19,46 @@
   transform: rotate(405deg);
   left: 0px;
   transition: 0.24s;
+  background-color: #fff;
 }
 
 .hamburger-container.open span:nth-child(2) {
   transform: rotateX(190deg);
   transform: translatex(-100px);
   opacity: 0;
+  background-color: #fff;
 }
 
 .hamburger-container.open span:nth-child(3) {
   transform: rotate(-405deg);
   top: 1rem;
+  background-color: #fff;
+}
+
+.sideNav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(206, 2, 217, 0.95);
+  background: linear-gradient(
+    0deg,
+    rgba(206, 2, 217, 0.95) 0%,
+    rgba(148, 2, 156, 0.95) 52%
+  );
+  color: #fff;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideNav.open {
+  left: 0;
+}
+
+.sideNav-item {
+  margin: 1rem 0;
+  font-size: 1.4rem;
 }

@@ -4,11 +4,18 @@ import { FaSnapchat, FaHome } from "react-icons/fa";
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
+  justify-content: space-between;
   padding: 1rem;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   flex: 1 3;
+  color: ${({ theme }) => theme.primaryText};
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    line-height: 1.6;
+  }
 `;
 
 const Icon = styled.div`
@@ -19,7 +26,7 @@ const Icon = styled.div`
   border-radius: 50%;
   height: 6rem;
   width: 6rem;
-  color: #fff;
+  color: #eeffff;
   font-size: 5rem;
 `;
 

@@ -8,12 +8,29 @@ const Header = styled.h2`
 const Paragraph = styled.p`
   font-size: 1rem;
   margin-top: 1rem;
+
+  @media (min-width: 768px) {
+    padding: 0 2rem;
+  }
 `;
 
-export default function InformationBlock({ children, heading }) {
+const Header2 = styled(Header)`
+  color: ${({ theme }) => theme.primaryText};
+`;
+
+export function InformationBlock({ children, heading }) {
   return (
     <>
       <Header>{heading}</Header>
+      <Paragraph>{children}</Paragraph>
+    </>
+  );
+}
+
+export function InformationBlock2({ children, heading }) {
+  return (
+    <>
+      <Header2>{heading}</Header2>
       <Paragraph>{children}</Paragraph>
     </>
   );

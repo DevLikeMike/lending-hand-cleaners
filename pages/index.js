@@ -3,7 +3,10 @@ import Hero from "../components/Hero";
 import ContentContainer from "../components/ContentContainer";
 import CleaningCard from "../components/Cleaning-Card";
 import CardContainer from "../components/CardContainer";
-import InformationBlock from "../components/InfomationBlock";
+import {
+  InformationBlock,
+  InformationBlock2,
+} from "../components/InfomationBlock";
 
 export default function Home() {
   return (
@@ -13,13 +16,6 @@ export default function Home() {
         <ContentContainer pageName='home'>
           <h1 className='text-center'>Lending Hand Cleaners</h1>
           <p className='tag-line text-center'>Leaving Our Love On Every Home</p>
-          <p className='text-center'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est
-            sit hic nostrum cumque, placeat, fugiat ratione voluptatem ducimus
-            ullam odio vitae eaque praesentium omnis in corporis dolorem
-            consectetur quasi aut quibusdam sed, labore fuga velit. In sequi
-            deserunt libero!
-          </p>
           <hr className='section-hr' />
           <h2 className='text-center'>Our Packages</h2>
           <CardContainer>
@@ -40,12 +36,14 @@ export default function Home() {
             </CleaningCard>
           </CardContainer>
           <hr className='section-hr' />
-          <InformationBlock heading={"Why Choose Us?"}>
+        </ContentContainer>
+        <ContentContainer pageName='home additional'>
+          <InformationBlock2 heading={"Why Choose Us?"}>
             Lending hand cleaners has been helping the East Tennessee area for
-            years. We have cleaners with a combine experience that spans over
+            years. We have cleaners with a combine experience that spans
             decades. When It comes to residential cleaning, you can trust our
             caring professionals to get the job done right.
-          </InformationBlock>
+          </InformationBlock2>
         </ContentContainer>
       </main>
     </Layout>

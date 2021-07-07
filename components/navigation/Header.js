@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 // Component imports
 import Hamburger from "./Hamburger";
+import SideNav from "./SideNav";
 // External imports
 import styled from "styled-components";
 
@@ -25,6 +26,8 @@ const NavList = styled.ul`
   color: #333;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 `;
 
 const NavItem = styled.li`
@@ -33,12 +36,14 @@ const NavItem = styled.li`
   list-style: none;
   padding: 0 2rem;
   font-size: 1.333rem;
+  height: 80%;
   display: none;
   transition: background-color 0.3s ease;
 
   &:hover {
     background-color: ${({ theme }) => theme.primaryPurple};
     color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   }
 
   a {
@@ -90,6 +95,7 @@ export default function Header() {
           sideNavigationOpen={sideNavigationOpen}
         />
       </NavList>
+      <SideNav sideOpen={sideNavigationOpen} openHandler={openHandler} />
     </Navbar>
   );
 }
