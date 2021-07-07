@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html,
+textarea {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 100%;
+}
+
+main {
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ai-fe {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ai-fs {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jc-fe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.jc-sb {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.jc-fs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* HamburgerContainer */
+.hamburger-container span:nth-child(1) {
+  top: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.hamburger-container span:nth-child(2) {
+  top: 33%;
+}
+
+.hamburger-container span:nth-child(3) {
+  top: 66%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.hamburger-container.open span:nth-child(1) {
+  top: 1rem;
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+  left: 0px;
+  -webkit-transition: 0.24s;
+  transition: 0.24s;
+}
+
+.hamburger-container.open span:nth-child(2) {
+  -webkit-transform: rotateX(190deg);
+          transform: rotateX(190deg);
+  -webkit-transform: translatex(-100px);
+          transform: translatex(-100px);
+  opacity: 0;
+}
+
+.hamburger-container.open span:nth-child(3) {
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+  top: 1rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.488rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.074rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.home h1 {
+  margin-bottom: 1rem;
+}
+
+.home .tag-line {
+  font-size: 1.728rem;
+  line-height: 1.2;
+}
+
+.home p {
+  margin: 1rem 0;
+}
+/*# sourceMappingURL=index.css.map */

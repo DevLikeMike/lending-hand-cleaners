@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap");
+
+// Custom variables
+$desktop: 900px;
+$md-mobile: 768px;
+$sm-mobile: 500px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+textarea {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 100%;
+}
+
+main {
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Helper classes
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+// Align items
+
+.ai-fe {
+  align-items: flex-end;
+}
+
+.ai-fs {
+  align-items: flex-start;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+// Justify Content
+
+.jc-fe {
+  justify-content: flex-end;
+}
+
+.jc-sb {
+  justify-content: space-around;
+}
+
+.jc-fs {
+  justify-content: flex-start;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+// Mixins
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+@mixin md-mobile {
+  @media (min-width: #{$md-mobile}) {
+    @content;
+  }
+}
+@mixin sm-mobile {
+  @media (min-width: #{$sm-mobile}) {
+    @content;
+  }
+}

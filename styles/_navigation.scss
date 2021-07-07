@@ -1,0 +1,33 @@
+/* HamburgerContainer */
+
+.hamburger-container span:nth-child(1) {
+  top: 0;
+  transform-origin: center;
+}
+
+.hamburger-container span:nth-child(2) {
+  top: 33%;
+}
+
+.hamburger-container span:nth-child(3) {
+  top: 66%;
+  transform-origin: center;
+}
+
+.hamburger-container.open span:nth-child(1) {
+  top: 1rem;
+  transform: rotate(405deg);
+  left: 0px;
+  transition: 0.24s;
+}
+
+.hamburger-container.open span:nth-child(2) {
+  transform: rotateX(190deg);
+  transform: translatex(-100px);
+  opacity: 0;
+}
+
+.hamburger-container.open span:nth-child(3) {
+  transform: rotate(-405deg);
+  top: 1rem;
+}
