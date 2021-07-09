@@ -15,7 +15,9 @@ export default function Home() {
         <Hero />
         <ContentContainer pageName='home'>
           <h1 className='text-center'>Lending Hand Cleaners</h1>
-          <p className='tag-line text-center'>Leaving Our Love On Every Home</p>
+          <p className='tag-line text-center'>
+            "Leaving Our Love On Every Home"
+          </p>
           <hr className='section-hr' />
           <h2 className='text-center'>Our Packages</h2>
           <CardContainer>

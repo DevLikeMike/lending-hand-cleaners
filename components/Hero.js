@@ -7,31 +7,24 @@ const HeroContainer = styled.section`
   background-color: #bcf9ed;
   color: ${({ theme }) => theme.text};
   position: relative;
-
-  @media (min-width: 900px) {
-    min-height: 50vh;
-    background-image: url("https://images.unsplash.com/photo-1563453392212-326f5e854473?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
-    background-size: cover;
-    background-position: 100% 5%;
-    background-repeat: no-repeat;
-  }
+  min-height: 50vh;
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/16/00/42/spray-bottle-2754171_1280.jpg");
+  background-size: cover;
+  background-position: 90% 15%;
+  background-repeat: no-repeat;
 
   div {
-    width: 100%;
-    max-width: 30rem;
-    height: 100%;
     color: ${({ theme }) => theme.primaryText};
-    padding: 1rem 3rem;
-
-    @media (min-width: 900px) {
-      height: auto;
-      background-color: #fff;
-      position: absolute;
-      bottom: 15%;
-      left: 15%;
-      padding: 1rem 1rem 1.5rem;
-      box-shadow: -15px -11px 0px 5px ${({ theme }) => theme.primaryPurple};
-    }
+    height: auto;
+    max-width: 30rem;
+    width: 75%;
+    background-color: #fff;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    padding: 1rem 1rem 1.5rem;
+    border: #7484bf 2px solid;
+    box-shadow: -15px -11px 0px 5px ${({ theme }) => theme.primaryPurple};
 
     h2 {
       margin-bottom: 1rem;
@@ -52,6 +45,11 @@ const HeroContainer = styled.section`
       background-color: ${({ theme }) => theme.primaryPurple};
       padding: 0.5rem 1rem;
       border-radius: 8px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
 `;

@@ -12,6 +12,8 @@ const Card = styled.div`
   flex: 1 3;
   color: ${({ theme }) => theme.primaryText};
   line-height: 1.5;
+  background-color: #fff;
+  border-radius: 5px;
 
   @media (min-width: 768px) {
     line-height: 1.6;
@@ -31,16 +33,21 @@ const Icon = styled.div`
 `;
 
 const CardBtn = styled.button`
-  background-color: ${({ theme }) => theme.primaryPurple};
-  color: #fff;
+  background-color: transparent;
+  color: ${({ theme }) => theme.accentDark};
   padding: 1rem 2rem;
-  border: none;
-  border-radius: 5rem;
+  border: 1px solid;
+  border-color: ${({ theme }) => theme.primaryPurple};
+  border-radius: 8px;
   min-width: 8rem;
   font-size: 1rem;
+  transition: all 0.3s ease;
 
   &:hover {
     opacity: 0.8;
+    background-color: ${({ theme }) => theme.primaryPurple};
+    color: #fff;
+    cursor: pointer;
   }
 `;
 
