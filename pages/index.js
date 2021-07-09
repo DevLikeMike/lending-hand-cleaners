@@ -22,21 +22,26 @@ export default function Home() {
           <h2 className='text-center'>Our Packages</h2>
           <CardContainer>
             <CleaningCard icon={"FaHome"} heading={"Standard Cleaning"}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
-              quisquam eligendi odit sequi nam ad quibusdam qui laborum possimus
-              a?
+              Our standard cleaning package includes cleaning of all living
+              areas in the home. Areas such as: living room, bathroom, kitchen,
+              and bedrooms.
             </CleaningCard>
             <CleaningCard icon={"FaHome"} heading={"Deep Cleans"}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
-              quisquam eligendi odit sequi nam ad quibusdam qui laborum possimus
-              a?
+              Our deep cleaning package includes all details of our standard
+              package plus added details. Added details such as base boards and
+              high dusting. This is an all inclusive clean, top to bottom and
+              wall to wall.
             </CleaningCard>
             <CleaningCard icon={"FaHome"} heading={"Move Out Cleans"}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
-              quisquam eligendi odit sequi nam ad quibusdam qui laborum possimus
-              a?
+              Move out cleans are ideal for your apartment living. This is a
+              deep clean for customers to help ensure they get their deposit
+              back.
             </CleaningCard>
           </CardContainer>
+          <p className='text-center'>
+            *All prices are subject to each job, and quotes will be given once
+            details of the job are discussed.*
+          </p>
           <hr className='section-hr' />
         </ContentContainer>
         <ContentContainer pageName='home additional'>

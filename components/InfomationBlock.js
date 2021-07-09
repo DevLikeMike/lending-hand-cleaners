@@ -8,6 +8,7 @@ const Header = styled.h2`
 const Paragraph = styled.p`
   font-size: 1rem;
   margin-top: 1rem;
+  text-align: center;
 
   @media (min-width: 768px) {
     padding: 0 2rem;
