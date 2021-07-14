@@ -3,10 +3,9 @@ import Hero from "../components/Hero";
 import ContentContainer from "../components/ContentContainer";
 import CleaningCard from "../components/Cleaning-Card";
 import CardContainer from "../components/CardContainer";
-import {
-  InformationBlock,
-  InformationBlock2,
-} from "../components/InfomationBlock";
+import PrimaryButton from "../components/PrimaryButton";
+import OpCard from "../components/Op-Card";
+import { InformationBlock2 } from "../components/InfomationBlock";
 
 export default function Home() {
   return (
@@ -44,6 +43,7 @@ export default function Home() {
           </p>
           <hr className='section-hr' />
         </ContentContainer>
+
         <ContentContainer pageName='home additional'>
           <InformationBlock2 heading={"Why Choose Us?"}>
             Lending hand cleaners has been helping the East Tennessee area for
@@ -51,6 +51,17 @@ export default function Home() {
             decades. When It comes to residential cleaning, you can trust our
             caring professionals to get the job done right.
           </InformationBlock2>
+          <hr className='section-hr' />
+        </ContentContainer>
+
+        <ContentContainer pageName='home'>
+          <h2 className='text-center'>How It Works</h2>
+          <CardContainer>
+            <OpCard heading='First, you request a quote' icon='FcInvite' />
+            <OpCard heading='Second, we chat' icon='FcAssistant' />
+            <OpCard heading='Finally, we clean' icon='FcApproval' />
+            <PrimaryButton location='/contact'>Request a quote</PrimaryButton>
+          </CardContainer>
         </ContentContainer>
       </main>
     </Layout>

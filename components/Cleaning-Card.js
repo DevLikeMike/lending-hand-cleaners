@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaSnapchat, FaHome } from "react-icons/fa";
+import Link from "next/link";
 
 const Card = styled.div`
   display: flex;
@@ -32,7 +33,7 @@ const Icon = styled.div`
   font-size: 5rem;
 `;
 
-const CardBtn = styled.button`
+const CardBtn = styled.a`
   background-color: transparent;
   color: ${({ theme }) => theme.accentDark};
   padding: 1rem 2rem;
@@ -57,7 +58,9 @@ export default function CleaningCard({ children, icon, heading }) {
       <Icon>{icon === "FaHome" && <FaHome />}</Icon>
       <h2 className='text-center'>{heading}</h2>
       {children}
-      <CardBtn>Read More</CardBtn>
+      <Link href='/services'>
+        <CardBtn>Read More</CardBtn>
+      </Link>
     </Card>
   );
 }

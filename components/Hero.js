@@ -65,7 +65,7 @@ export default function Hero() {
           ensure we have just what you are looking for. Ask for regular
           scheduling for discounts.
         </p>
-        <Link href='/'>
+        <Link href='/contact'>
           <a className='hero-btn'>Contact Us Now</a>
         </Link>
       </div>
