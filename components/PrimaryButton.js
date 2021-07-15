@@ -15,6 +15,7 @@ const PrimButton = styled.a`
   &:hover {
     background-color: ${({ theme }) => theme.primaryPurple};
     color: #fff;
+    cursor: pointer;
   }
 `;
 

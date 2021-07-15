@@ -24,6 +24,12 @@ const Foot = styled.footer`
   h3 {
     font-size: 1.3rem;
   }
+
+  li a:hover,
+  .hover:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.primaryBlue};
+  }
 `;
 
 export default function Footer() {
@@ -34,25 +40,31 @@ export default function Footer() {
         <h3>About Us</h3>
         <ul className='flex flex-center col'>
           <Link href='/'>
-            <a>Home</a>
+            <a className='hover'>Home</a>
           </Link>
           <Link href='/about'>
-            <a>About</a>
+            <a className='hover'>About</a>
           </Link>
           <Link href='/services'>
-            <a>Services</a>
+            <a className='hover'>Services</a>
           </Link>
           <Link href='/contact'>
-            <a>Contact</a>
+            <a className='hover'>Contact</a>
           </Link>
         </ul>
       </div>
       <div className='flex flex-center col'>
         <h3>Contact</h3>
         <ul>
-          <li>Crystal Thomas - (423) 608-9223</li>
-          <li>Vicki Williamson - (865) 455-7688</li>
-          <li>Samantha Moss - (865) 963-9904</li>
+          <li>
+            Crystal Thomas - <a href='tel:4236089223'>(423) 608-9223</a>
+          </li>
+          <li>
+            Vicki Williamson - <a href='tel:8654557688'>(865) 455-7688</a>
+          </li>
+          <li>
+            Samantha Moss - <a href='tel:8659639904'>(865) 963-9904</a>
+          </li>
         </ul>
       </div>
     </Foot>

@@ -1,0 +1,46 @@
+.about {
+  margin-top: 3rem;
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+
+  h1::first-letter {
+    color: #de03a9;
+  }
+
+  p {
+    line-height: 1.5;
+    max-width: 55rem;
+    margin: 0 auto 1rem;
+  }
+
+  .section-hr {
+    height: 3px;
+    background-color: hsl(0, 0%, 29%);
+    margin: 2rem 0 1rem;
+  }
+
+  h2 {
+    text-decoration: underline;
+    text-decoration-color: #de03a9;
+  }
+
+  .phone {
+    font-size: 1.4rem;
+  }
+
+  div {
+    h3 {
+      display: inline-block;
+    }
+
+    a {
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: #de03a9;
+    }
+  }
+}

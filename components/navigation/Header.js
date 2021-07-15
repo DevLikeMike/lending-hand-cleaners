@@ -73,19 +73,19 @@ export default function Header() {
         </NavItem>
 
         <NavItem>
-          <Link href='/'>
+          <Link href='/about'>
             <a>About</a>
           </Link>
         </NavItem>
 
         <NavItem>
-          <Link href='/'>
+          <Link href='/services'>
             <a>Services</a>
           </Link>
         </NavItem>
 
         <NavItem>
-          <Link href='/'>
+          <Link href='/contact'>
             <a>Contact</a>
           </Link>
         </NavItem>
