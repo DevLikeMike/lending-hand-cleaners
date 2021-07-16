@@ -16,7 +16,7 @@ const SideNav = ({ sideOpen, openHandler }) => {
           <Link href='/about'>About</Link>
         </li>
         <li className='sideNav-item' onClick={onClick}>
-          <Link href='/Services'>Services</Link>
+          <Link href='/services'>Services</Link>
         </li>
         <li className='sideNav-item' onClick={onClick}>
           <Link href='/contact'>Contact</Link>
