@@ -9,7 +9,6 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
   } = useForm();
 
@@ -18,7 +17,7 @@ const Contact = () => {
 
   // onSubmit for react form hook ASYNC
   const onSubmit = async (data) => {
-    let { name, email, message, subject } = data;
+    let { name, email, message, subject, phone } = data;
     // Hit api/contact endpoint from built in api page using fetch
     const res = await fetch(`${NEXT_URL}/api/contact`, {
       method: "POST",
@@ -30,6 +29,7 @@ const Contact = () => {
         email: email,
         message: message,
         subject: subject,
+        phone: phone,
       }),
     });
 
@@ -49,9 +49,8 @@ const Contact = () => {
             Lending Hand Cleaners are happy to be contacted by either phone or
             by email. For direct contacts please visit our{" "}
             <a href='/about'>about</a> page. If you would like to email us for
-            inquiries, please fill out the form below. Attatch a phone number in
-            the subject or message. Please allow for 1-2 business days for a
-            response.
+            inquiries, please fill out the form below. Please allow for 1-2
+            business days for a response.
           </p>
           <hr className='section-hr' />
           <form
@@ -92,6 +91,22 @@ const Contact = () => {
               })}
             />
             <span>{errors?.email?.message}</span>
+            <input
+              type='text'
+              name='phone'
+              placeholder='Phone Number'
+              {...register("phone", {
+                required: {
+                  value: true,
+                  message: "You must enter a phone number.",
+                },
+                maxLength: {
+                  value: 20,
+                  message: "Phone Number cannot be longer than 20 characters.",
+                },
+              })}
+            />
+            <span>{errors?.phone?.message}</span>
             <input
               type='text'
               name='subject'

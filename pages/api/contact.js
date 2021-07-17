@@ -4,7 +4,7 @@ export default async (req, res) => {
   // Check to make sure method is post
   if (req.method === "POST") {
     // Destruct the body information
-    const { name, email, message, subject } = req.body;
+    const { name, email, message, subject, phone } = req.body;
 
     // Build transporter for nodemailer (Boilerplate)
     const transporter = nodemailer.createTransport({
@@ -27,6 +27,7 @@ export default async (req, res) => {
         subject: `${subject}`,
         html: `<p>New Form Submission from your site</p>
         <p><strong>Name: </strong> ${name} </p>
+        <p><strong>Phone: </strong> ${phone} </p>
         <p><strong>Email: </strong> ${email} </p>
         <p><strong>Message: </strong> ${message} </p>
   
