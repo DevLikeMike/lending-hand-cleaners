@@ -4,20 +4,20 @@ import PackageSection from "../components/PackageSection";
 
 export default function services() {
   return (
-    <Layout>
+    <Layout title='LHC | Services'>
       <main>
         <ContentContainer pageName='services'>
           <h1 className='text-center'>Our Packages</h1>
           <p>
             Lending Hand Cleaners offers different packages to better serve our
-            customers wants and needs. All package prices are adjusted to the
+            customer's wants and needs. All package prices are adjusted to the
             job at hand, and prices will vary job to job.
           </p>
 
           <hr className='section-hr' />
 
           <PackageSection
-            imgSrc='https://images.pexels.com/photos/4099467/pexels-photo-4099467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            imgSrc='/images/cleaning1.jpeg'
             side='right'
             heading='Standard Package'
           >
@@ -25,15 +25,15 @@ export default function services() {
             in the home. Areas such as: living room, bathroom, kitchen, and
             bedrooms. These rooms will be cleaned by dusting, vacuuming,
             sweeping, mopping. All appliances in the bathroom and kitchen will
-            be cleaned on the exterior, this includes your microwave and stove.
-            Other details can be added into our packages, and price is subject
-            to change depending on adjustments.
+            be cleaned on the exterior, this includes your microwave, stove, and
+            dishwasher. Other details can be added into our packages, and prices
+            are subject to change depending on adjustments.
           </PackageSection>
 
           <hr className='section-hr' />
 
           <PackageSection
-            imgSrc='https://images.pexels.com/photos/4107278/pexels-photo-4107278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            imgSrc='/images/cleaning2.jpeg'
             side='left'
             heading='Deep Package'
           >
@@ -47,7 +47,7 @@ export default function services() {
           <hr className='section-hr' />
 
           <PackageSection
-            imgSrc='https://images.pexels.com/photos/4107120/pexels-photo-4107120.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+            imgSrc='/images/cleaning3.jpeg'
             side='right'
             heading='Cleanout Package'
           >

@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
+    <Layout title='LHC | Contact Us'>
       <main>
         <ContentContainer pageName='contact flex flex-center col'>
           <h1>Contact Us</h1>
@@ -49,8 +49,8 @@ const Contact = () => {
             Lending Hand Cleaners are happy to be contacted by either phone or
             by email. For direct contacts please visit our{" "}
             <a href='/about'>about</a> page. If you would like to email us for
-            inquiries, please fill out the form below. Please allow for 1-2
-            business days for a response.
+            inquiries, please fill out the form below and allow for 1-2 business
+            days for a response.
           </p>
           <hr className='section-hr' />
           <form

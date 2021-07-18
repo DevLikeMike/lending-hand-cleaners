@@ -4,7 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function about() {
   return (
-    <Layout>
+    <Layout title='LHC | About'>
       <main>
         <ContentContainer pageName='about'>
           <h1 className='text-center'>Lending Hand Cleaners</h1>
@@ -24,18 +24,18 @@ export default function about() {
           <h2 className='text-center'>Cleaners You Can Rely On</h2>
 
           <p>
-            Hiring a cleaning serives can be a challenge. Every cleaning
-            services can offer you competive rates and a clean home. So what
-            makes one option better than the next?
+            Hiring a cleaning serice can be a challenge. Every cleaning services
+            can offer you competive rates and a clean home. So what makes us
+            better than the next?
           </p>
 
           <p>
             The deciding factor between an average cleaner and a great cleaner
             is accountability. Being accountable doesn't just mean we will be on
             time, it means we will go above and beyond to meet your
-            expectations. And if something is how you like it, we will adjust
-            and based on your direct feedback, ensuring you get what you agreed
-            to.
+            expectations. If something is not how you like it, we will adjust
+            and based on your direct feedback. Ensuring you get what you agreed
+            to!
           </p>
 
           <hr className='section-hr' />
