@@ -78,7 +78,7 @@ const Contact = () => {
               type='email'
               name='email'
               placeholder='Email'
-              // Register is from react-hook-form, first param is name field, second options
+              // Register is from react-hook-form, first param is name field, second option
               {...register("email", {
                 required: {
                   value: true,
