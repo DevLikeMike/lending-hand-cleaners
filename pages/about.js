@@ -21,7 +21,7 @@ export default function about() {
 
           <hr className='section-hr' />
 
-          <h2 className='text-center'>Cleaners You Can Rely On</h2>
+          <h2 className='text-center'>Cleaners You Can Rely On!</h2>
 
           <p>
             Hiring a cleaning serice can be a challenge. Every cleaning services
