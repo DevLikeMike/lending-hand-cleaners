@@ -7,7 +7,7 @@ function Layout({ title, description, keywords, children }) {
     <>
       <Head>
         <title>{title}</title>
-        <meta name='title' content='Casey Hall Attorney at Law, PLLC' />
+        <meta name='title' content='Lending Hand Cleaners' />
         <meta name='description' content={description} />
         <meta name='keywords' content={keywords} />
 
