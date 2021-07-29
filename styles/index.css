@@ -26,8 +26,22 @@ a {
   color: inherit;
 }
 
+.section-hr {
+  height: 3px;
+  background-color: #4a4a4a;
+  margin: 2rem 0 1rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .flex {
@@ -262,6 +276,19 @@ p {
 
 .about .phone {
   font-size: 1.4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .about .phone {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .about div h3 {
@@ -274,5 +301,125 @@ p {
 
 .about div a:hover {
   color: #de03a9;
+}
+
+.services {
+  margin-top: 3rem;
+}
+
+.services > * {
+  margin-bottom: 1rem;
+}
+
+.services h1::first-letter {
+  color: #de03a9;
+}
+
+.services h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #de03a9;
+          text-decoration-color: #de03a9;
+}
+
+.services p {
+  line-height: 1.5;
+  max-width: 55rem;
+  margin: 0 auto 1rem;
+}
+
+.services .section-hr {
+  height: 3px;
+  background-color: #4a4a4a;
+  margin: 2rem 0 1rem;
+}
+
+.services .phone {
+  font-size: 1.4rem;
+}
+
+.services div h3 {
+  display: inline-block;
+}
+
+.services div a {
+  font-weight: 600;
+}
+
+.services div a:hover {
+  color: #de03a9;
+}
+
+.contact {
+  margin-top: 3rem;
+}
+
+.contact h1::first-letter {
+  color: #de03a9;
+}
+
+.contact p {
+  max-width: 55rem;
+  margin: 0.5rem 0;
+}
+
+.contact p a {
+  color: #de03a9;
+}
+
+.contact p a:hover {
+  text-decoration: underline;
+}
+
+.contact hr {
+  width: 100%;
+}
+
+.contact form {
+  padding: 1rem;
+  width: 100%;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5em;
+  color: #333;
+  font-size: 1rem;
+  outline-color: #de03a9;
+  border: solid 1px #333;
+  border-radius: 5px;
+}
+
+.contact form textarea {
+  min-height: 7em;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.contact form input[type="submit"] {
+  border: none;
+  text-align: center;
+  min-height: 3rem;
+  background-color: #de03a9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.contact form input[type="submit"]:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.contact form span {
+  font-size: 0.8em;
+  padding: 0.2rem;
+  color: red;
+  display: inline-block;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 /*# sourceMappingURL=index.css.map */

@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <ContentContainer pageName='home'>
-          <h1 className='text-center'>Lending Hand Cleaners</h1>
+          <h1 className='text-center'>Lending Hand Cleaners!</h1>
           <p className='tag-line text-center'>
             "Leaving Our Love On Every Home"
           </p>
