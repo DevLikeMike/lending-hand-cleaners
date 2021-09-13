@@ -43,24 +43,30 @@ export default function about() {
           <h2 className='text-center'>Our Cleaners</h2>
 
           <div className='phone flex jc-c ai-c'>
-            <h3 className='name'>Crystal Thomas</h3>
-            <FaPhoneAlt
-              style={{ margin: "auto 0.5rem", fontSize: "1.2rem" }}
-            />{" "}
+            <h3 className='name'>
+              Crystal Thomas{" "}
+              <FaPhoneAlt
+                style={{ margin: "auto 0.5rem", fontSize: "1.2rem" }}
+              />
+            </h3>{" "}
             <a href='tel:4236089223'> (423) 608-9223</a>
           </div>
           <div className='phone flex jc-c ai-c'>
-            <h3 className='name'>Vicki Williamson</h3>
-            <FaPhoneAlt
-              style={{ margin: "auto 0.5rem", fontSize: "1.2rem" }}
-            />{" "}
+            <h3 className='name'>
+              Vicki Williamson{" "}
+              <FaPhoneAlt
+                style={{ margin: "auto 0.5rem", fontSize: "1.2rem" }}
+              />
+            </h3>{" "}
             <a href='tel:8654557688'> (865) 455-7688</a>
           </div>
           <div className='phone flex jc-c ai-c'>
-            <h3 className='name'>Samantha Moss</h3>
-            <FaPhoneAlt
-              style={{ margin: "auto 0.5rem", fontSize: "1.2rem" }}
-            />{" "}
+            <h3 className='name'>
+              Samantha Moss{" "}
+              <FaPhoneAlt
+                style={{ margin: "auto 0.5rem", fontSize: "1.2rem" }}
+              />
+            </h3>{" "}
             <a href='tel:8659639904'> (865) 963-9904</a>
           </div>
         </ContentContainer>

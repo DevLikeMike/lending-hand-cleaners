@@ -29,8 +29,10 @@
   .phone {
     font-size: 1.4rem;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
 
-    @media (min-width: 768px) {
+    @media (min-width: 500px) {
       flex-direction: row;
     }
   }

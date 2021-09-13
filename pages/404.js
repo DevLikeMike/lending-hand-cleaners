@@ -4,7 +4,7 @@ import ContentContainer from "../components/ContentContainer";
 
 export default function _404() {
   return (
-    <Layout>
+    <Layout title='LHC | 404'>
       <main className='flex flex-center col'>
         <ContentContainer>
           <div>

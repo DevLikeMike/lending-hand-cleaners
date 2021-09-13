@@ -3,7 +3,9 @@ import Link from "next/link";
 
 const PrimButton = styled.a`
   width: 100%;
-  margin: 1rem 0;
+  max-width: 900px;
+  margin: 1rem auto;
+  display: block;
   border: 1px solid;
   border-radius: 8px;
   border-color: ${({ theme }) => theme.primaryPurple};

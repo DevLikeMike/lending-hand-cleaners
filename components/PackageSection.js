@@ -3,10 +3,14 @@ import Image from "next/image";
 
 const Package = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 3rem;
 
   @media (max-width: 900px) {
     flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
   }
 
   .info {
@@ -16,8 +20,8 @@ const Package = styled.section`
   .left {
     order: 0;
 
-    @media (max-width: 900) {
-      order: 2;
+    @media (max-width: 900px) {
+      order: 1;
     }
   }
   .right {

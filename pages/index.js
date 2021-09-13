@@ -60,8 +60,8 @@ export default function Home() {
             <OpCard heading='First, you request a quote' icon='FcInvite' />
             <OpCard heading='Second, we chat' icon='FcAssistant' />
             <OpCard heading='Finally, we clean' icon='FcApproval' />
-            <PrimaryButton location='/contact'>Request a quote</PrimaryButton>
           </CardContainer>
+          <PrimaryButton location='/contact'>Request a quote</PrimaryButton>
         </ContentContainer>
       </main>
     </Layout>
