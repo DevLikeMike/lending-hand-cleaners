@@ -28,6 +28,11 @@ const Package = styled.section`
     order: 1;
   }
 
+  .package-img {
+    background-color: ${({ theme }) => theme.primaryPurple};
+    padding: 1rem 0 0 1rem;
+  }
+
   img {
     object-fit: cover;
   }
@@ -36,7 +41,7 @@ const Package = styled.section`
 export default function PackageSection({ children, imgSrc, side, heading }) {
   return (
     <Package>
-      <div class={`info ${side}`}>
+      <div className={`info ${side}`}>
         <h2>{heading}</h2>
         <p>{children}</p>
       </div>

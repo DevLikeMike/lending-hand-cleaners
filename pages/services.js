@@ -4,10 +4,10 @@ import PackageSection from "../components/PackageSection";
 
 export default function services() {
   return (
-    <Layout title='LHC | Services'>
+    <Layout title='LHC | Service Packages'>
       <main>
         <ContentContainer pageName='services'>
-          <h1 className='text-center'>Our Packages</h1>
+          <h1 className='text-center'>Our Services</h1>
           <p>
             Lending Hand Cleaners offers different packages to better serve our
             customer's wants and needs. All package prices are adjusted to the
@@ -17,7 +17,7 @@ export default function services() {
           <hr className='section-hr' />
 
           <PackageSection
-            imgSrc='/images/cleaning1.jpeg'
+            imgSrc='/images/BA_08.jpg'
             side='right'
             heading='Standard Package'
           >
@@ -33,7 +33,7 @@ export default function services() {
           <hr className='section-hr' />
 
           <PackageSection
-            imgSrc='/images/cleaning2.jpeg'
+            imgSrc='/images/BA_09.jpg'
             side='left'
             heading='Deep Package'
           >
